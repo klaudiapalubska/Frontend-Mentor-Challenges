@@ -17,7 +17,7 @@ body { box-sizing: border-box;
 
 .perfume-card { display: flex;
                 flex-wrap: wrap;
-                margin-right: 5%;
+                margin-right: 0%;
                 padding: 0;
                 max-width: 700px;
                 max-height: 1000px;
