@@ -16,7 +16,7 @@ Ps. Unfortunately I didnt make layout for devices with orientation landscape.
 - Mobile:
 
 
- ![Zdjęcie](design\my-phone-design.png)
+ ![Zdjęcie](https://raw.githubusercontent.com/klaudiapalubska/Frontend-Mentor-Challenges/main/%231%20Product%20preview%20card/product-preview-card-component-main/design/my-phone-design.png)
 
 
 - Desktop:
