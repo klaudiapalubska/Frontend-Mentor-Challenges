@@ -22,4 +22,4 @@ Ps. Unfortunately I didnt make layout for devices with orientation landscape.
 - Desktop:
 
 
- ![Zdjęcie](design\my-desktop-design.png)
+ ![Zdjęcie](https://raw.githubusercontent.com/klaudiapalubska/Frontend-Mentor-Challenges/main/%231%20Product%20preview%20card/product-preview-card-component-main/design/my-desktop-design.png)
