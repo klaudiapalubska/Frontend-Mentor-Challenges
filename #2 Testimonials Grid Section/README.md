@@ -8,6 +8,10 @@
 
 I must admit that **I had a little problem** with grid when I tried make layout for smallest devices. I think I shouldnt used pixels for comment-cards but when I realized that it was to late. In that case Ive just used flexbox for rescue that situation. I dunno how its work, but exactly this is work really good, I guess.
 
+[Frontend Mentor](https://www.frontendmentor.io)
+
+[Testimonials Grid Section Github.io](https://klaudiapalubska.github.io/testimonials-grid-section.github.io/)
+
 ---
 
 ## My design
