@@ -6,9 +6,10 @@ I decided to make it in that form because I like when all things are arranged. A
 
 ## Table with date of project realize
 
-| Number | Project-name              | Date         |
-| ------ | ------------------------- | ------------ |
-| 01     | Product preview card      | Feb 26, 2023 |
-| 02     | Testimonials grid section | Mar 11, 2023 |
-| -      | -                         | -            |
+Number|Project-name |Date|Language
+-|-|-|-
+01|Product preview card|Feb 26, 2023|HTML/CSS
+02|Testimonials grid section|Mar 11, 2023|HTML/CSS
+-|-|-|-
+
 
