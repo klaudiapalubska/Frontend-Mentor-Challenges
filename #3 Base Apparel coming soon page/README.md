@@ -19,6 +19,8 @@ I will appreciate if someone can take a look to code and tell me whats wrong wit
 
 [Frontend Mentor](https://www.frontendmentor.io)
 
+[Live Base Apparel coming soon page](https://klaudiapalubska.github.io/base-apparel-coming-soon-page.github.io/)
+
 ---
 
 ## My design
