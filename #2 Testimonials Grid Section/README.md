@@ -20,7 +20,7 @@ I must admit that **I had a little problem** with grid when I tried make layout 
 
 ![My desktop desing](design/my_desktop_design.png)
 
-- Tablet/biggest mobile devices itp
+- Tablet/biggest mobile devices etc.
 
 ![My tablet design v1](design/my_1st_tablet_design.png)
 
