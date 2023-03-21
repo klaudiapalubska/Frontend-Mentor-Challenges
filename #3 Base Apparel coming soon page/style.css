@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  margin: 0 auto;
+}
+
+body,
+.email {
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  font-family: "Josefin Sans", Courier, monospace;
+}
+
+/*Typography*/
+h1,
+h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  letter-spacing: 18px;
+  margin: 0;
+}
+h1 {
+  font-weight: 300;
+  color: hsl(0, 36%, 70%);
+}
+h2 {
+  font-weight: 600;
+  color: hsl(0, 6%, 24%);
+}
+h2 ~ p {
+  font-weight: 400;
+  color: hsl(0, 36%, 70%);
+  line-height: 24px;
+  margin: 5% 0 7%;
+}
+
+/*Computer layout*/
+main {
+  display: grid;
+  grid-template-columns: 60% minmax(610px, 40%);
+  grid-template-rows: 10% 90% 100%;
+  grid-template-areas:
+    "log-sec img-sec"
+    " inf-sec img-sec";
+  height: auto;
+  height: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.left-panel {
+  min-height: 100vh;
+  background-image: url("images/bg-pattern-desktop.svg");
+  background-size: cover;
+  background-position: center center;
+}
+.logo-section {
+  grid-area: log-sec;
+  padding: 5% 20% 5%;
+}
+.info-section {
+  grid-area: inf-sec;
+  max-width: 80%;
+  padding: 15% 0% 20% 20%;
+}
+
+.img-section {
+  grid-area: img-sec;
+  background-image: url(images/hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 610px;
+}
+
+.img-mobile-section {
+  display: none;
+}
+
+form {
+  width: 150%;
+  display: flex;
+  margin: 8px;
+}
+
+.email,
+button {
+  height: 50px;
+  border: 1.5px solid hsla(0, 36%, 70%, 0.534);
+  border-radius: 25px;
+}
+
+.email {
+  min-width: 380px;
+  padding-left: 25px;
+}
+
+.email::placeholder {
+  color: hsla(0, 36%, 70%, 0.534);
+}
+
+button {
+  position: relative;
+  left: -80px;
+  min-width: 90px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  box-shadow: 15px 15px 20px hsla(0, 74%, 74%, 0.259);
+}
+
+button:hover {
+  background: hsl(0, 74%, 74%);
+  cursor: pointer; /*DO POPRAWIENIA*/
+}
+
+.error {
+  position: relative;
+  right: 88px;
+  top: 13px;
+  visibility: hidden;
+}
+
+.error-text {
+  font-size: 0.8rem;
+  margin-left: 30px;
+  color: hsl(0, 93%, 68%);
+  visibility: hidden;
+}
+
+/*Mobile Layout*/
+@media only screen and (max-width: 992px) {
+  html,
+  body {
+    overflow-y: auto;
+  }
+
+  h1,
+  h2 {
+    font-size: 40px;
+    letter-spacing: 14px;
+  }
+
+  main {
+    grid-template-columns: 100%;
+    overflow-y: auto;
+  }
+  .logo-section {
+    padding: 5% 10% 5%;
+  }
+
+  .img-section {
+    display: none;
+  }
+
+  .img-mobile-section {
+    grid-area: img-mob-sec;
+    display: block;
+    background-image: url(images/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+
+  .mobile {
+    display: flex;
+    vertical-align: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10%;
+  }
+
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .left-panel {
+    background-image: none;
+  }
+
+  .email {
+    position: relative;
+    right: 20px;
+    width: 80vw;
+    min-width: 150px;
+    max-width: 380px;
+    padding-left: 20px;
+  }
+
+  button {
+    position: relative;
+    left: -85px;
+    min-width: 70px;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  }
+
+  .error {
+    position: relative;
+    right: 88px;
+    top: 13px;
+  }
+
+  .error-text {
+    margin-left: 0;
+  }
+}
+
+/*Fix tablets problems*/
+@media only screen and (min-width: 472px) and (max-width: 992px) {
+  h1,
+  h2 {
+    font-size: 60px;
+    letter-spacing: 18px;
+  }
+
+  main {
+    overflow-y: hidden;
+  }
+  .tablet-center {
+    display: block;
+    width: 400px;
+    position: fixed;
+    top: 785px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  button {
+    width: 90px;
+  }
+}
+
+@media only screen and (max-height: 694px) {
+  .img-mobile-section {
+    height: 180px;
+  }
+}
