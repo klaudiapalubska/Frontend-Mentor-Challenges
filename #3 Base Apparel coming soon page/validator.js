@@ -2,10 +2,6 @@ const ErrorData = document.getElementById("email");
 const ErrorText = document.getElementById("error-text");
 const ErrorImg = document.getElementById("error-img");
 
-function removeEvent(event) {
-  ErrorData.removeEventListener(removeEvent);
-}
-
 function validator() {
   event.preventDefault();
   const Pattern =
