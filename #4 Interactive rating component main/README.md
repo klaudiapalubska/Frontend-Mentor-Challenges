@@ -8,7 +8,7 @@ This is my solution for challenge, full responsive web for any devices. I was ma
 
 [Frontend Mentor](https://www.frontendmentor.io)
 
-[Live Interactive rating component]()
+[Live Interactive rating component](https://klaudiapalubska.github.io/interactive-rating-component.github.io/)
 
 ---
 
