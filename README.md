@@ -11,6 +11,7 @@ Number|Project-name |Date|Language
 01|Product preview card|Feb 26, 2023|HTML/CSS
 02|Testimonials grid section|Mar 11, 2023|HTML/CSS
 03|Base Apparel coming soon page|Mar 21, 2023|HTML/CSS/JavaScript
+03|Interactive rating component|Mar 31, 2023|HTML/CSS/JavaScript
 -|-|-|-
 
 
