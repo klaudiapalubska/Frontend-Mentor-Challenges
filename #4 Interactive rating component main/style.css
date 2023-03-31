@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Overpass", sans-serif;
+  color: hsl(0, 0%, 100%);
+}
+
+body,
+main {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+.rating h1,
+p {
+  margin-left: 0.75rem;
+}
+.container {
+  background-color: hsl(216, 12%, 8%);
+  height: 100vh;
+}
+
+.buttons,
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hidde {
+  display: none;
+}
+
+main {
+  background: hsl(215deg, 26%, 13%)
+    radial-gradient(ellipse at top, rgba(124, 135, 152, 0.15), transparent);
+  max-width: 23rem;
+  min-width: 15.5rem;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border-radius: 0.938rem;
+}
+
+.rating p {
+  color: hsl(217, 12%, 63%);
+}
+
+#grade-part object {
+  position: relative;
+  left: 0.188rem;
+  top: 0.188rem;
+}
+
+#grade-part h1 {
+  margin-top: 1.25rem;
+  margin-bottom: 0.313rem;
+}
+.buttons {
+  padding-top: 0.938rem;
+}
+
+form {
+  min-width: 90%;
+}
+
+[class*="marks"] {
+  width: 2.813rem;
+  height: 2.813rem;
+  border-radius: 1.563rem;
+  border: none;
+  background-color: hsl(213, 19%, 18%);
+  margin: 0.625rem;
+}
+
+.submit {
+  background-color: hsl(25, 97%, 53%);
+  max-width: 23rem;
+  min-width: 90%;
+  height: 3rem;
+  margin: 0 4%;
+  margin-top: 1.25rem;
+  border-radius: 1.563rem;
+  border: none;
+  font-family: "Overpass", sans-serif;
+  font-size: 0.8rem;
+  letter-spacing: 0.188rem;
+  text-transform: uppercase;
+}
+
+.submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+.marks:hover {
+  background-color: hsl(217, 12%, 63%);
+}
+
+.marks:hover,
+.submit:hover {
+  cursor: pointer;
+}
+
+.click-color {
+  background-color: hsl(25, 97%, 53%);
+}
+
+.submit,
+.marks {
+  color: hsl(0, 0%, 100%);
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+}
+
+#thanks-part {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+#selected {
+  color: hsl(25, 78%, 57%);
+  border-radius: 1.25rem;
+  background-color: hsl(213, 19%, 18%);
+  padding: 0.313rem 0.75rem;
+  max-width: fit-content;
+}
+
+#thanks-part p,
+object,
+h1 {
+  margin: 0.75rem;
+}
+
+@media only screen and (max-width: 392px) {
+  [class*="marks"] {
+    margin: 0.313rem;
+  }
+  .buttons:first-child {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 282px) {
+  body,
+  .container,
+  main {
+    overflow: scroll;
+    margin: 0;
+  }
+}
+@media (orientation: landscape) {
+  body,
+  .container,
+  main {
+    overflow: scroll;
+    margin: auto;
+  }
+}

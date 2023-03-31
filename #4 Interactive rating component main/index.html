@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <title>Frontend Mentor | Interactive rating component</title>
+</head>
+
+<body>
+  <div class="container">
+    <main>
+      <article class="rating" id="grade-part">
+        <div class="type-marks">
+          <object type="image/svg+xml" data="/images/icon-star.svg">
+            Star
+          </object>
+        </div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All
+          feedback is appreciated to help us improve our offering!
+        </p>
+        <form>
+          <div class="buttons" id="buttons">
+            <input type="button" aria-label="Site rating 1" title="mark_1" class="marks" value="1" id="mark_1">
+
+            </input>
+            <input type="button" aria-label="Site rating 2" title="mark_2" class="marks" value="2" id="mark_2">
+
+            </input>
+            <input type="button" aria-label="Site rating 3" title="mark_3" class="marks" value="3" id="mark_3">
+            </input>
+            <input type="button" aria-label="Site rating 4" title="mark_4" class="marks" value="4" id="mark_4">
+            </input>
+            <input type="button" aria-label="Site rating 5" title="mark_5" class="marks" value="5" id="mark_5">
+
+            </input>
+          </div>
+          <div class="submit-button">
+            <input aria-label="Send your grade" type="submit" title="submit" class="submit" id="submit" value="submit">
+
+            </input>
+          </div>
+        </form>
+      </article>
+
+      <article class="rating hidde" id="thanks-part">
+        <object type="image/svg+xml" data="/images/illustration-thank-you.svg">
+          Phone illustration
+        </object>
+        <p id="selected">You selected out of 5</p>
+        <h1>Thank you!</h1>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </article>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
