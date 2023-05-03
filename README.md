@@ -12,6 +12,7 @@ Number|Project-name |Date|Language
 02|Testimonials grid section|Mar 11, 2023|HTML/CSS
 03|Base Apparel coming soon page|Mar 21, 2023|HTML/CSS/JavaScript
 04|Interactive rating component|Mar 31, 2023|HTML/CSS/JavaScript
+05|Nft Preview Card Component Main|May 03, 2023|HTML/SCSS/JavaScript
 -|-|-|-
 
 
