@@ -1,0 +1,14 @@
+:root {
+  background-color: $color-main-bg;
+  font-size: 18px;
+}
+
+main {
+  height: 100vh;
+  @include flex-box;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}

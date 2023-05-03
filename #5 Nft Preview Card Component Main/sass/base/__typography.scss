@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+
+.card {
+  color: $color-white;
+  font-family: "Outfit", sans-serif;
+  font-size: 0.75rem;
+  &__heading {
+    text-align: left;
+    &--title {
+      font-size: 1.1rem;
+      block-size: fit-content;
+      margin: 0.6rem 0;
+      &:hover {
+        @include color-hover;
+      }
+    }
+  }
+
+  &__box {
+    text-align: left;
+
+    &--description,
+    &--time,
+    &--user {
+      color: $primary-color-1st;
+    }
+    &--eth {
+      color: $primary-color-2nd;
+      &--img {
+        position: absolute;
+      }
+      &--span {
+        margin-left: 1rem;
+      }
+    }
+    &--position {
+      display: flex;
+    }
+    &--time {
+      position: relative;
+      margin-left: 5rem;
+      &--img {
+        position: absolute;
+      }
+      &--span {
+        margin-left: 1.3rem;
+      }
+    }
+    &--user {
+      border-top: 1px solid $color-line;
+      padding-top: 0.8rem;
+      margin-top: 0.8rem;
+      position: relative;
+      &--img {
+        margin: 0;
+        width: 1.8rem;
+        border: 1px solid $color-white;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 80%;
+      }
+      &--p {
+        display: inline-block;
+        margin: 0;
+        position: absolute;
+        top: 1.3rem;
+        margin-left: 0.5rem;
+        &--color {
+          color: $color-white;
+          margin: 0.1rem;
+          &:hover {
+            @include color-hover;
+          }
+        }
+      }
+    }
+  }
+}

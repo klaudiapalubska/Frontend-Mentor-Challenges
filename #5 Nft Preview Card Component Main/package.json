@@ -1,0 +1,14 @@
+{
+  "name": "nft-preview",
+  "version": "1.0.0",
+  "description": "Frontend Mentor challenge",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Klaudia",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

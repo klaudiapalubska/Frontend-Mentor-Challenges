@@ -1,0 +1,18 @@
+@media only screen and (min-width: 400px) {
+  .card {
+    height: 29rem;
+    max-width: 16.4rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (orientation: landscape) and (min-device-width: 260px) and (max-device-width: 900px) {
+  main {
+    margin: 6rem auto;
+  }
+}

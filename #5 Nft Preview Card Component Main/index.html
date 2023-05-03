@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | NFT preview card component</title>
+  </head>
+  <body>
+    <main>
+      <section class="card">
+        <div
+          class="card__image"
+          onmouseover="changeVisibleOn()"
+          onmouseout="changeVisibleOff()"
+        >
+          <img
+            src="images/image-equilibrium.jpg"
+            alt="view"
+            class="card__image--img"
+          />
+        </div>
+
+        <img
+          class="card__image__view hidden"
+          id="eye"
+          src="images/icon-view.svg"
+        />
+
+        <div class="card__heading">
+          <h1 class="card__heading--title">Equilibrium #3429</h1>
+        </div>
+        <div class="card__box">
+          <p class="card__box--description">
+            Our Equilibrium collection promotes balance and calm.
+          </p>
+
+          <div class="card__box--position">
+            <div class="card__box--eth">
+              <img
+                class="card__box--eth--img"
+                src="images/icon-ethereum.svg"
+                alt="ETH"
+              />
+              <span class="card__box--eth--span">0.041 ETH</span>
+            </div>
+            <div class="card__box--time">
+              <img
+                class="card__box--time--img"
+                src="images/icon-clock.svg"
+                alt="clock"
+                class="icon"
+              />
+              <span class="card__box--time--span">3 days left</span>
+            </div>
+          </div>
+
+          <div class="card__box--positon">
+            <div class="card__box--user">
+              <img
+                class="card__box--user--img"
+                src="images/image-avatar.png"
+                alt="Jules Wyvern"
+                class="avatar"
+              />
+              <p class="card__box--user--p">
+                Creation of
+                <span class="card__box--user--p--color">Jules Wyvern</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>

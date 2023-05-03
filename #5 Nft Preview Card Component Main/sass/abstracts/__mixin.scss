@@ -1,0 +1,9 @@
+@mixin flex-box {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin color-hover {
+  color: $primary-color-2nd;
+  cursor: pointer;
+}
