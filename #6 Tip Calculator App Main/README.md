@@ -18,7 +18,7 @@ I added special functionality and upgrade some:
 
 [Frontend Mentor](https://www.frontendmentor.io)
 
-[Check out live web]()
+[Check out live web](https://647e3ffeeb86c8174536064d--earnest-speculoos-f37771.netlify.app)
 
 Useful function for reset cookies:
 
