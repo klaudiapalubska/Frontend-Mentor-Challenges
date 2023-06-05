@@ -16,17 +16,17 @@ This is my solution for challenge, full responsive web for any devices. This is 
 
 - Desktops
 
-  ![My desktop design](/layout-scr/layout-desktop.png)
-  ![My desktop design](/layout-scr/layout-desktop-2.png)
+  ![My desktop design](layout-scr/layout-desktop.png)
+  ![My desktop design](layout-scr/layout-desktop-2.png)
 
 - Smartphones
 
-  ![My mobile design](/layout-scr/layout-mobile-2.png)
+  ![My mobile design](layout-scr/layout-mobile-2.png)
 
   Little issue with underline idk why
 
 - Smartphones landscape mode
 
-  ![My mobile design](/layout-scr/layout-mobile.png)
+  ![My mobile design](layout-scr/layout-mobile.png)
 
 ---
