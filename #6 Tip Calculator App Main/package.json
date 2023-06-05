@@ -1,0 +1,14 @@
+{
+  "name": "tip-calculator",
+  "version": "1.0.0",
+  "description": "Challenge from frontend mentor",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Klaudia Pałubska",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

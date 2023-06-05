@@ -1,0 +1,116 @@
+.count-info {
+  &--checkbox {
+    display: none;
+    transition: all 0.5s;
+  }
+  &--button {
+    background-color: $color-neutral-dark-cyan;
+    height: 3rem;
+    width: 3rem;
+    position: fixed;
+    top: 0.3rem;
+    right: 0.3rem;
+    border-radius: 50%;
+    z-index: 20;
+    text-align: center;
+    cursor: pointer;
+  }
+  &--popup {
+    display: none;
+    text-align: center;
+    overflow-y: scroll;
+    max-height: 80vh;
+    &-table {
+      display: inline-block;
+      font-size: 0.5rem;
+      border-collapse: collapse;
+    }
+  }
+
+  &--backgroud {
+    border-radius: 50%;
+    position: fixed;
+    top: 3.5rem;
+    right: 3.5rem;
+    z-index: 10;
+    display: none;
+  }
+  &--checkbox:checked ~ &--backgroud {
+    transform: scale(2000);
+    display: block;
+  }
+
+  &--icon {
+    position: relative;
+    margin-top: 1.45rem;
+    margin-left: 0.75rem;
+
+    &,
+    &::before,
+    &::after {
+      width: 1.5rem;
+      height: 2px;
+      background-color: $color-white;
+      display: inline-block;
+      z-index: 30;
+    }
+    &,
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      transition: all 0.2s;
+    }
+    &::before {
+      top: -0.5rem;
+    }
+    &::after {
+      top: 0.5rem;
+    }
+  }
+  &--button:hover &--icon::before {
+    transform: scale(0.8);
+  }
+  &--button:hover &--icon::after {
+    transform: scale(0.8);
+  }
+  &--checkbox:checked + &--button &--icon {
+    background-color: transparent;
+  }
+  &--checkbox:checked + &--button &--icon::before {
+    top: 0;
+    transform: rotate(135deg);
+  }
+  &--checkbox:checked + &--button &--icon::after {
+    top: 0;
+    transform: rotate(-135deg);
+  }
+  &--checkbox:checked ~ &--popup {
+    display: block;
+    animation: fade 0.2s ease-out;
+  }
+}
+
+th,
+td {
+  border: 2px solid $color-black;
+  padding: 0.1rem;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+tr:not(:last-child),
+th:not(:last-child),
+td:not(:last-child) {
+  border-right: none;
+}
+
+.heading-table {
+  color: $color-white;
+}
+th {
+  background-color: $color-neutral-dark-cyan;
+}
+p[class*="td-"] {
+  color: $color-black;
+}

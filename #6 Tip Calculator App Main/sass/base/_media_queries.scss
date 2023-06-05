@@ -1,0 +1,81 @@
+@media (min-width: 413px) {
+  .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .container {
+    max-width: 35.62rem;
+    max-height: 37.18rem;
+    min-height: 35rem;
+  }
+
+  .calculator {
+    min-height: 40.875rem;
+    max-height: 40.875rem;
+    border-radius: 1.25rem;
+  }
+  .header {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  * {
+    font-size: 18px;
+  }
+
+  .box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .container {
+    width: 60vw;
+    max-width: 55rem;
+    min-width: 54.5rem;
+    max-height: 23.5rem;
+    min-height: 23.5rem;
+    display: flex;
+  }
+  .calculator {
+    display: flex;
+    max-height: 23.5rem;
+    min-height: 23.5rem;
+    padding: 4rem;
+    &-count {
+      width: 50%;
+      margin-right: 2rem;
+      max-height: 20.8rem;
+    }
+    &-display {
+      width: 50%;
+      max-height: 20.8rem;
+    }
+  }
+
+  .reset-btn-margin {
+    height: 10%;
+    position: relative;
+  }
+
+  .btn--reset {
+    margin: 0;
+    position: absolute;
+    left: 26.75rem;
+    top: 15.625rem;
+    max-width: 22.675rem;
+  }
+
+  .paragraph-container-margin {
+    height: 75%;
+    max-height: 15.56rem;
+  }
+}

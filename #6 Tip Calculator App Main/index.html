@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.9" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <div class="count-info">
+      <input type="checkbox" class="count-info--checkbox" id="count-inf--checkbox">
+      <label for="count-inf--checkbox" class="count-info--button">
+        <span class="count-info--icon">&nbsp;</span>
+      </label>
+      <div class="count-info--backgroud ">&nbsp;</div>
+      <div class="count-info--popup popup-warning" id="popup-count-info">
+        <p class="paragraph-style--3">Last calculation</p>
+        <table class="count-info--popup-table paragraph-style--1">
+          <thead>
+          <tr class="table-heading">
+            <th><p class="heading-table paragraph-style--1">Bill</p> </th>
+            <th><p class="heading-table paragraph-style--1">Precent</p> </th>
+            <th><p class="heading-table paragraph-style--1">People</p> </th>
+            <th><p class="heading-table paragraph-style--1">Tip</p> </th>
+            <th><p class="heading-table paragraph-style--1">Total</p> </th>
+            
+          </tr>
+          <thead>
+            <tbody  id="table-body">
+            </tbody>
+          
+          
+        </table>
+        <div class="container--button">
+        <input type="button" value="DELETE" class="btn-delete" id="delete" onclick="deleteData()">
+      </div>
+      </div>
+    </div>
+    <div class="box">
+    <header class="header">
+      <span class="header-heading">
+        <h1 class="first-heading">spli</h1>
+        <h1 class="first-heading">tter</h1>
+      </span>
+    </header>
+    
+    <div class="container">
+      <section class="calculator">
+        <div class="calculator-count">
+          <form action="index.html" class="calculator-count--form" id="form">
+            <p class="paragraph-style--1">Bill <p class="paragraph-style--4" id="warning--2"></p></p>
+
+            <input type="number" name="bill" id="bill" class="input-field" onblur="billInputValue = getInputData(billInput); validation[0] = checkBill(billInputValue); calculation()" />
+            <br />
+            <span class="input-img--dolar">
+              <img
+                src="images/icon-dollar.svg"
+                alt="view"
+                class="input-img--icon"
+              />
+            </span>
+            <span class="calculator-count__box">
+              <p class="paragraph-style--1">Select Tip&nbsp;</p>
+              <p class="paragraph-style--2">
+                <span class="paragraph-style--2" id="fix-position">%</span>
+              </p>
+            </span>
+
+            <div class="button-container">
+              <input type="button" value="5%" class="btn" id="5" onclick="buttonValue = getButtonData('5'); validation[1] = true; calculation(); btnClicked(0)"/>
+              <input type="button" value="10%" class="btn" id="10"onclick="buttonValue = getButtonData('10'); validation[1] = true; calculation(); btnClicked(1)" />
+              <input type="button" value="15%" class="btn" id="15" onclick="buttonValue = getButtonData('15'); validation[1] = true; calculation(); btnClicked(2)"/>
+              <input type="button" value="25%" class="btn" id="25" onclick="buttonValue = getButtonData('25'); validation[1] = true; calculation(); btnClicked(3)"/>
+              <input type="button" value="50%" class="btn" id="50" onclick="buttonValue = getButtonData('50'); validation[1] = true; calculation(); btnClicked(4)"/>
+              <input
+                type="number"
+                placeholder="Custom"
+                class="input--button btn btn--white"
+                id="custom"
+                onblur="buttonValue = getInputData(customInput); validation[1] = checkPercent(buttonValue); calculation(); btnClicked(5);"
+              />
+            </div>
+
+            <p class="paragraph-style--1 margin-3">
+              Number of People <p class="paragraph-style--4" id="warning"></p>
+              <span class="input-img--person">
+                <img
+                  src="images/icon-person.svg"
+                  alt="view"
+                  class="input-img--icon"
+                />
+              </span>
+            </p>
+
+            <input
+              type="number"
+              name="people"
+              id="people"
+              class="input-field"
+              onblur="peopleInputValue = getInputData(peopleInput); validation[2] = checkPeople(peopleInputValue); calculation()"
+            />
+
+            <br />
+          </form>
+        </div>
+        <div class="calculator-display">
+          <div class="paragraph-container-margin">
+            <div class="paragraph-container">
+              <div class="margin">
+                <p class="paragraph-style--1__white">Tip Amount</p>
+                <p class="paragraph-style--2">/ person</p>
+              </div>
+              <div class="margin">
+                <p class="paragraph-style--1__white">Total</p>
+                <p class="paragraph-style--2">/ person</p>
+              </div>
+            </div>
+
+            <div class="paragraph-container paragraph-container-2">
+              <div class="magin-2 margin-top">
+                <p class="paragraph-style--3" id="tip-amount">$0.00</p>
+              </div>
+
+              <div class="margin-2">
+                <p class="paragraph-style--3" id="total">$0.00</p>
+              </div>
+            </div>
+          </div>
+<div class="reset-btn-margin"></div>
+          <input class="btn btn--reset" type="reset" value="RESET" id="reset" />
+          
+        </div>
+        
+      </section>
+    </div>
+  </div>
+  </div>
+
+      <div class="popup-warning hidden" id="popup-warning">
+        <p class="paragraph-style--3">Warning!</p>
+        <p class="paragraph-style--1">Please set percent from 0% to 100%</p>
+        <input type="button" value="OK" class="btn" id="ok">
+      </div>
+
+      <div class="popup-warning hidden" id="popup-first-time">
+        <p class="paragraph-style--3">Hello!☺</p>
+        <p class="paragraph-style--1">
+          Welcome first time on my website 
+        </p>
+        <p class="paragraph-style--1">This page use cookies for save your last calculation</p>
+        <p class="paragraph-style--1">Click icon on right side to see your counted score</p>
+       
+        <input type="button" value="OK" class="btn" id="ok-first-time">
+      </div>
+      <div class="background hidden" id="background"></div>
+    
+      <script src="script/variables.js"></script>
+      <script src="script/take_data.js"></script>
+
+      <script src="script/validation.js"></script>
+    <script src="script/calculation.js"></script>
+
+    <script src="script/set_style.js"></script>
+    <script src="script/reset_button.js"></script>
+
+    <script src="script/popup_functionality.js"></script>
+    <script src="script/cookies.js"></script>
+  </body>
+</html>

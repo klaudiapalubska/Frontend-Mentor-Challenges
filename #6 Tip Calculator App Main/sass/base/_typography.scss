@@ -1,0 +1,39 @@
+.first-heading {
+  color: $color-neutral-dark-grayish-cyan;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+}
+
+.paragraph-style--1 {
+  color: $color-neutral-dark-grayish-cyan;
+  font-size: 0.8rem;
+  margin: 0.2rem 0;
+  position: relative;
+  &__white {
+    color: $color-white;
+
+    font-size: 0.9rem;
+    margin: 0.1rem 0;
+  }
+}
+
+.paragraph-style--2 {
+  color: $color-neutral-dark-grayish-cyan;
+  font-size: 0.7rem;
+  position: relative;
+  width: fit-content;
+}
+
+.paragraph-style--3 {
+  color: $color-primary-strong-cyan;
+  font-size: 1.8rem;
+}
+
+.paragraph-style--4 {
+  //display: none;
+  position: absolute;
+  color: $color-red;
+  z-index: 6;
+  font-size: 0.7rem;
+  margin-top: 2.3rem;
+}

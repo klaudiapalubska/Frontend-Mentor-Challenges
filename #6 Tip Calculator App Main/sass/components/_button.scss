@@ -1,0 +1,64 @@
+.btn,
+.btn-delete {
+  display: inline-block;
+  cursor: pointer;
+  width: 7.2rem;
+  height: 2.3rem;
+  margin: 0.5rem 0.7rem 0.5rem 0;
+  border-radius: 7px;
+  border: none;
+  background-color: $color-neutral-dark-cyan;
+  color: $color-white;
+  &:hover {
+    background-color: $color-primary-strong-cyan;
+    color: $color-neutral-dark-cyan;
+  }
+
+  &:focus {
+    @include button-click-style;
+  }
+
+  &--white {
+    background-color: $color-neutral-very-light-grayish-cyan;
+    color: $color-neutral-grayish-cyan;
+    text-align: center;
+    &::placeholder {
+      text-align: center;
+      color: $color-neutral-grayish-cyan;
+    }
+    &:hover {
+      background-color: $color-primary-strong-cyan;
+      color: $color-neutral-dark-cyan;
+      text-align: center;
+      &::placeholder {
+        color: $color-neutral-dark-cyan;
+      }
+    }
+  }
+
+  &--reset {
+    display: inline-block;
+    width: 90%;
+    margin: 5% 5%;
+    background-color: $color-primary-strong-cyan;
+    color: $color-black;
+    &:hover {
+      background-color: $color-neutral-very-light-grayish-cyan;
+      color: $color-neutral-grayish-cyan;
+    }
+  }
+}
+
+#custom {
+  &:focus-visible {
+    @include focus-input-style;
+  }
+}
+
+.btn-click-style {
+  @include button-click-style;
+}
+
+.container--button {
+  width: 100%;
+}

@@ -1,0 +1,20 @@
+const billInput = document.getElementById("bill"),
+  customInput = document.getElementById("custom"),
+  peopleInput = document.getElementById("people"),
+  warning = document.getElementById("warning"),
+  warning2 = document.getElementById("warning--2"),
+  warningButton = document.getElementById("ok"),
+  popupWarning = document.getElementById("popup-warning"),
+  background = document.getElementById("background"),
+  tipAmountParagraph = document.getElementById("tip-amount"),
+  totalParagraph = document.getElementById("total"),
+  firstTimePopup = document.getElementById("popup-first-time"),
+  buttonFirstTime = document.getElementById("ok-first-time");
+
+let billInputValue,
+  peopleInputValue,
+  buttonValue,
+  total,
+  validation = [],
+  tipAmount = [],
+  valueCookie;
