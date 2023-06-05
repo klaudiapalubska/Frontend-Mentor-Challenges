@@ -13,6 +13,7 @@ Number|Project-name |Date|Language
 03|Base Apparel coming soon page|Mar 21, 2023|HTML/CSS/JavaScript
 04|Interactive rating component|Mar 31, 2023|HTML/CSS/JavaScript
 05|Nft preview card component main|May 03, 2023|HTML/SCSS/JavaScript
+06|Tip Calculator App Main|June 05, 2023|HTML/SCSS/JavaScript
 -|-|-|-
 
 
