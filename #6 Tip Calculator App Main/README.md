@@ -26,9 +26,9 @@ Useful function for reset cookies:
 deleteAllCookiesExcept(cookieToKeep); //one parametr
 
 //tests
-//deleteAllCookiesExcept(""); -- delete all cookies
+deleteAllCookiesExcept(""); //delete all cookies
 
-//deleteAllCookiesExcept("isCookie"); -- delete all cookies without cookie responsible for welcome popup
+deleteAllCookiesExcept("isCookie"); //delete all cookies without cookie responsible for welcome popup
 ```
 
 ## My design
