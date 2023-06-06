@@ -10,7 +10,7 @@ Ps. Unfortunately I didnt make layout for devices with orientation landscape.
 
 ## Live web: 
 
-https://klaudiapalubska.github.io/product-preview-card-component.github.io/
+[Live-web](https://klaudiapalubska.github.io/product-preview-card-component.github.io/)
 
 [Frontend Mentor](https://www.frontendmentor.io) challenges.
 
