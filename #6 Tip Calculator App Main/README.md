@@ -18,7 +18,7 @@ I added special functionality and upgrade some:
 
 [Frontend Mentor](https://www.frontendmentor.io)
 
-[Check out live web](https://647e3ffeeb86c8174536064d--earnest-speculoos-f37771.netlify.app)
+[Check out live web](https://earnest-speculoos-f37771.netlify.app)
 
 Useful function for reset cookies:
 
@@ -45,10 +45,10 @@ deleteAllCookiesExcept("isCookie"); //delete all cookies without cookie responsi
 
 - Tablets and smartphones landscape mode
 
-  ![My mobile design](/layout-scr/tablet-design.png)
+  ![My tablet design](layout-scr/tablet-design.png)
 
 - Smartphones
 
-  ![My mobile design](/layout-scr/mobile-design-01.png)
+  ![My mobile design](layout-scr/mobile-design-01.png)
 
-  ![My mobile design](/layout-scr/mobile-design-02.png)
+  ![My mobile design](layout-scr/mobile-design-02.png)
