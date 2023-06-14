@@ -23,4 +23,4 @@ Links
 - [Live-web Base Apparel Coming Soon Page](https://klaudiapalubska.github.io/base-apparel-coming-soon-page.github.io/)
 - [Live-web Interactive Rating Component](https://klaudiapalubska.github.io/interactive-rating-component.github.io/)
 - [Live-web Nft Preview Card Component](https://main--amazing-souffle-dec1a0.netlify.app)
-- [Live-web Tip Calculator App](https://647e3ffeeb86c8174536064d--earnest-speculoos-f37771.netlify.app)
+- [Live-web Tip Calculator App](https://earnest-speculoos-f37771.netlify.app)
