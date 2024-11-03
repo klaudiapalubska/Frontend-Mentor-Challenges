@@ -1,0 +1,11 @@
+//-------------------------Responsive-----------------------------//
+
+@mixin responsive($breakpoints) {
+  @media only screen and (min-width: $breakpoints) {
+    @content;
+  }
+}
+
+@mixin darkMode() {
+  background-color: $color-darkmode-very-dark-blue;
+}

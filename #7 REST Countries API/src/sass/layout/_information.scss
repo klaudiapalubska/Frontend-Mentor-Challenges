@@ -1,0 +1,83 @@
+.information {
+  background-color: $color-lightmode-very-light-gray;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  @include responsive($second-breakpoint) {
+    flex-direction: row;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+
+  &__img {
+    background-color: $color-neutral-black;
+    width: 100%;
+    height: 40vh;
+    max-height: 15rem;
+    max-width: 24.875rem;
+    margin-bottom: 2rem;
+    @include responsive($second-breakpoint) {
+      width: 50%;
+      height: 40vh;
+      max-height: 400px;
+      max-width: 47.125rem;
+    }
+  }
+
+  &__data {
+    @include responsive($second-breakpoint) {
+      max-height: 25rem;
+      margin-left: 5rem;
+    }
+  }
+
+  &__section {
+    margin-bottom: 3rem;
+    width: max-content;
+    white-space: nowrap;
+    @include responsive($second-breakpoint) {
+      margin-top: 2rem;
+    }
+    &:nth-child(2) {
+      margin-top: 2rem;
+      @include responsive($second-breakpoint) {
+        margin-top: -1.5rem;
+        margin-left: 15rem;
+      }
+    }
+
+    @include responsive($second-breakpoint) {
+      width: 30%;
+    }
+  }
+
+  &__neighbours {
+    display: flex;
+    flex-direction: column;
+    @include responsive($second-breakpoint) {
+      flex-direction: row;
+    }
+    &__box {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      width: 100%;
+      justify-content: center;
+      @include responsive($second-breakpoint) {
+        margin-top: 0;
+      }
+    }
+
+    &__p {
+      width: 10rem;
+    }
+  }
+
+  &__container {
+    @include responsive($second-breakpoint) {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

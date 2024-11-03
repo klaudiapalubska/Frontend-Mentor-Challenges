@@ -1,0 +1,40 @@
+//-------------------------Colors-----------------------------//
+
+//Light mode
+$color-lightmode-very-dark-blue: hsl(200, 15%, 8%);
+$color-lightmode-dark-gray: hsl(0, 0%, 52%);
+$color-lightmode-very-light-gray: hsl(0, 0%, 98%);
+$color-input-hover: hsla(0, 28%, 92%, 0.774);
+
+//Dark mode
+$color-darkmode-very-dark-blue: hsl(207, 26%, 17%);
+$color-darkmode-dark-blue: hsl(209, 23%, 22%);
+
+//Loader
+$color-loader: hsl(39, 100%, 50%);
+
+//Neutral
+$color-neutral-white: hsl(0, 0%, 100%);
+$color-neutral-black: hsl(0, 0%, 0%);
+
+//-------------------------Typography-----------------------------//
+
+$base-font-size: 16px; //first phone
+$primary-font-nunito-sans: "Nunito Sans", sans-serif;
+$font-weight-thin: 300;
+$font-weight-medium: 600;
+$font-weight-bold: 800;
+
+//-------------------------Shadow-box-----------------------------//
+
+$shadow-box-bottom: 0px 17px 9px -22px $color-lightmode-very-dark-blue;
+$shadow-box-light-mode: 6px 11px 32px -30px $color-lightmode-very-dark-blue;
+$shadow-box-field-style: 0px 0px 30px -15px $color-lightmode-very-dark-blue;
+
+//-------------------------Breakpoints-----------------------------//
+
+$first-breakpoint: 50em; //800px
+$second-breakpoint: 81.25em; //1300px
+//-------------------------Distance-----------------------------//
+
+//Padding

@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+.header {
+  font-size: 1.1rem;
+  font-weight: $font-weight-bold;
+}
+
+.paragraph {
+  &--1 {
+    font-size: 1rem;
+    font-weight: $font-weight-medium;
+  }
+
+  &--2 {
+    font-size: 0.9rem;
+    font-weight: $font-weight-thin;
+  }
+}

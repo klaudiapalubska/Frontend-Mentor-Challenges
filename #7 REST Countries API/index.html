@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rest Countries Api</title>
+    <link rel="icon" href="src/img/glob.svg" sizes="any" type="image/svg+xml" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="src/sass/main.scss"
+    />
+    <script defer type="module" src="src/js/controller.js"></script>
+  </head>
+  <body>
+    <div class="loader__container">
+      <div class="loader none-display"></div>
+    </div>
+
+    <nav class="nav">
+      <div class="nav__title"><h1 class="header">Where in the world?</h1></div>
+      <div class="nav__light-mode">
+        <button class="button button--light-mode">
+          <img
+            class="button__icon button__icon--rotate"
+            src="src/img/regular-moon.svg"
+            alt="regular moon"
+          />
+          <p class="paragraph paragraph--1">Dark Mode</p>
+        </button>
+      </div>
+    </nav>
+
+    <main class="main">
+      <!--START-->
+
+      <div class="main__start">
+        <div class="search">
+          <label class="search__field">
+            <img
+              class="search__field__icon"
+              src="src/img/magnifying-glass.svg"
+              alt="magnifying glass"
+            />
+            <input
+              type="text"
+              class="search__field__input"
+              placeholder="Search for a country..."
+              required
+            />
+          </label>
+
+          <label class="search__field--2">
+            <div class="search__field--2__input">
+              <p class="paragraph paragraph--2">Filter by Region</p>
+              <img
+                class="search__field--2__icon"
+                src="src/img/chevron-down.svg"
+                alt="chevron down"
+              />
+            </div>
+          </label>
+          <div class="search__filter-field filter-field none-display">
+            <div class="filter-field__select paragraph--2">
+              <div class="filter-field__option">
+                <input type="radio" id="africa" name="region" value="Africa" />
+                <label for="africa">Africa</label>
+              </div>
+              <div class="filter-field__option">
+                <input
+                  type="radio"
+                  id="america"
+                  name="region"
+                  value="America"
+                />
+                <label for="america">America</label>
+              </div>
+              <div class="filter-field__option">
+                <input type="radio" id="asia" name="region" value="Asia" />
+                <label for="asia">Asia</label>
+              </div>
+              <div class="filter-field__option">
+                <input type="radio" id="europe" name="region" value="Europe" />
+                <label for="europe">Europe</label>
+              </div>
+              <div class="filter-field__option">
+                <input
+                  type="radio"
+                  id="oceania"
+                  name="region"
+                  value="Oceania"
+                />
+                <label for="oceania">Oceania</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card"></div>
+      </div>
+
+      <!--WHEN U CLICK-->
+      <div class="main__country__back">
+        <button class="button button--back field-style">
+          <img
+            class="button__icon"
+            src="src/img/arrow-left.svg"
+            alt="regular moon"
+          />
+          <p class="paragraph paragraph--2">Back</p>
+        </button>
+      </div>
+      <div class="main__country none-display"></div>
+    </main>
+  </body>
+</html>
+
+<!--      <div class="card__country">
+          <div class="card__country__img"></div>
+          <div class="card__country__info">
+          <h2 class="header--2">{Country Name}</h2>
+          <span class="card__country__span">
+            <p class="paragraph paragraph--3">Population:</p>
+            <p class="paragraph paragraph--1">{Population}</p>
+          </span>
+          <span class="card__country__span">
+            <p class="paragraph paragraph--3">Region:</p>
+            <p class="paragraph paragraph--1">{Region}</p>
+          </span>
+          <span class="card__country__span">
+            <p class="paragraph paragraph--3">Capital:</p>
+            <p class="paragraph paragraph--1">{Capital}</p>
+          </span>
+          </div>
+        </div>-->

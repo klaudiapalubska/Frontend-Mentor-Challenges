@@ -1,0 +1,35 @@
+.loader {
+  border: 16px solid $color-lightmode-dark-gray;
+  border-top: 16px solid $color-loader;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 0.3s linear infinite;
+  z-index: 10;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+<<<<<<< HEAD
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    background: rgba(
+      255,
+      255,
+      255,
+      0
+    ); /* Optional: Semi-transparent background */
+    z-index: 15; /* Ensure it stays on top of other elements */
+=======
+    width: 100vw;
+    height: 100vh;
+    background: rgba($color-neutral-white, 0);
+    z-index: 15;
+>>>>>>> 362b910 (fix some problems)
+    pointer-events: none;
+  }
+}

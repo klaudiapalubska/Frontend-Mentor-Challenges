@@ -1,0 +1,19 @@
+.main {
+  background-color: $color-lightmode-very-light-gray;
+  box-shadow: inset 0px 67px 28px -90px $color-lightmode-very-dark-blue;
+  padding: 2rem 1rem;
+  height: 100vh;
+  &__start,
+  &__country {
+    @include responsive($first-breakpoint) {
+      margin-top: 1rem;
+    }
+  }
+
+  &__country__back {
+    @include responsive($second-breakpoint) {
+      margin-right: 2rem;
+      margin-left: 2rem;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.field-style {
+  box-shadow: $shadow-box-field-style;
+  width: 6rem;
+  height: 2rem;
+  background-color: $color-neutral-white;
+  border: 1px solid $color-input-hover;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+    background-color: $color-input-hover;
+  }
+}
