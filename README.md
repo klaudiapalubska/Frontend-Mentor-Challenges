@@ -4,7 +4,7 @@ This repository contains all my solutions for challenges from **Frontend Mentor 
 
 I decided to organize it this way because I like having everything arranged. All projects include links to their own Live-Pages.
 
-## Table with date of project realize
+## Projects
 
 Number|Project-name |Date|Language
 -|-|-|-
